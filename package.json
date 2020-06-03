@@ -1,0 +1,24 @@
+{
+  "name": "react-cra-express-typescript-monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "workspaces": [
+    "packages/backend",
+    "packages/client",
+    "packages/shared"
+  ],
+  "scripts": {
+    "prettier-all": "prettier --write \"**/*{ts,js,css,html,jsx,tsx}\"",
+    "client": "yarn workspace client start",
+    "backend": "yarn workspace backend start",
+    "start": "concurrently --kill-others-on-fail \"yarn backend\"  \"yarn client\""
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "prettier": "^2.0.5"
+  },
+  "author": "",
+  "license": "ISC"
+}
