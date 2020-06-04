@@ -11661,6 +11661,15 @@ fsevents@^1.2.7:
   languageName: node
   linkType: hard
 
+"react-cra-express-typescript-monorepo@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "react-cra-express-typescript-monorepo@workspace:."
+  dependencies:
+    concurrently: ^5.2.0
+    prettier: ^2.0.5
+  languageName: unknown
+  linkType: soft
+
 "react-dev-utils@npm:^10.2.1":
   version: 10.2.1
   resolution: "react-dev-utils@npm:10.2.1"
